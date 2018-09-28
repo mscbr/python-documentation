@@ -6,20 +6,99 @@
 </head>
 <body>
 	<nav id="navbar">
-			<header id="nav-header">Python Docs</header>
+			<header id="nav-header">Python&trade; Docs</header>
 		<div id="navlink-div">
-			<a href="#" class="nav-link">Topic Of Section</a>
-			<a href="#" class="nav-link">Topic Of Section1</a>
+			<a href="#Introduction" class="nav-link">Introduction</a>
+			<a href="#First_Function" class="nav-link">First Function</a>
+			<a href="#A_Program" class="nav-link">A Program</a>
 			<a href="#" class="nav-link">Topic Of Section2</a>
 		</div>
 	</nav>
 	<main id="main-doc">
+		<section class="main-section" id="Introduction">
+			<header><h1>Introduction</h1></header>
+			<p>
+				The computational processes inside the computer are like magical spirits that we can harness for our work. Unfortunately, those spirits only understand a very arcane language that we do not know. What we need is a friendly Genie that can direct the spirits to fulfill our wishes. Our Genie is a Python interpreter. We can give instructions to the Python interpreter, and it directs the underlying spirits to carry out our demands. We communicate with the Genie through a special language of spells and incantations (i.e., Python). The best way to start learning about Python is to let our Genie out of the bottle and try some spells.<br />
+				Here is a sample interaction with a Python shell:<br />
+			</p>
+			<div class="code">
+				<code>
+					>>> print("Hello, World!")<br />
+					Hello, World!<br />
+					>>> print(2 + 3)<br />
+					5<br />
+					>>> print("2 + 3 =", 2 + 3)<br /> 
+					2+3=5
+				</code>	
+			</div>
+			<p>
+				Here I have tried out three examples using the Python print statement. The first statement asks Python to display the literal phrase Hello, World!. Python responds on the next line by printing the phrase. The second print statement asks Python to print the sum of 2 and 3. The third print combines these two ideas. Python prints the part in quotes 2 + 3 = followed by the result of adding 2 + 3, which is 5.
+				This kind of shell interaction is a great way to try out new things in Python. Snippets of interactive sessions are sprinkled throughout this book. When you see the Python prompt >>> in an example, that should tip you off that an interactive session is being illustrated. It’s a good idea to fire up your own Python shell and try the examples.
+			</p>
+		</section>
+		<section class="main-section" id=" First_Function">
+			<header><h1>First Function</h1></header>
+			<p>
+				Python lets us put a sequence of statements together to create a brand-new command or function. Here is an example of creating a new function called hello:<br>
+			</p>
+			<div class="code">
+				<code>
+					>>> def hello():<br />
+       				print("Hello")<br />
+        			print("Computers are fun!")<br />
+					>>>
+				</code>
+			</div>
+			<p>
+				The first line tells Python that we are defining a new function and we are naming it hello. The following lines are indented to show that they are part of the hello function. (Note: some shells will print ellipses [“...”] at the beginning of the indented lines). The blank line at the end (obtained by hitting the "ENTER" key twice) lets Python know that the definition is finished, and the shell responds with another prompt. Notice that typing the definition did not cause Python to print anything yet. We have told Python what should happen when the hello function is used as a command; we haven’t actually asked Python to perform it yet.
+				A function is invoked (or called) by typing its name followed by parentheses. Here’s what happens when we use our hello command:
+			</p>
+			<div class="code">
+				<code>
+					>>> hello()<br />
+					Hello<br />
+					Computers are fun!<br />
+					>>>
+				</code>
+			</div>	
+		</section>
+		<section class="main-section" id="A_Program">
+			<header><h1>A Program</h1></header>	
+			<p>
+				Let’s take a look at exemplificatory program line by line and see what it does. Don’t worry about understanding every detail right away.<br />
+				The first two lines of the program start with the # character:
+			</p>
+			<div class="code">
+				<code>
+					# File: chaos.py<br />
+					# A simple program illustrating chaotic behavior.
+				</code>
+			</div>
+			<p>
+				These lines are called comments. They are intended for human readers of the program and are ignored by Python. The Python interpreter always skips any text from the pound sign (#) through the end of a line.<br />
+				The next line of the program begins the definition of a function called main:
+			</p>
+			<div class="code">
+				<code>
+					def main():<br />
+    				print("This program illustrates a chaotic function")<br />
+    				x = eval(input("Enter a number between 0 and 1: "))<br />
+    				for i in range(10):<br />
+        			x = 3.9 * x * (1 - x)<br />
+        			print(x)<br /><br />
+					main()
+				</code>
+			</div>
+			<p>
+				Strictly speaking, it would not be necessary to create a main function. Since the lines of a module are executed as they are loaded, we could have written our program without this definition. One immediate benefit of this approach was illustrated above; it allows us to run the program by simply invoking chaos.main(). We don’t have to restart the Python shell in order to run it again, which would be necessary in the main-less case. The first line inside of main is really the beginning of our program.
+			</p>
+		</section>
 		<section class="main-section" id="Topic_Of_Section">
-			<header>Topic Of Section</header>
-			<!-- 10 * <p></p> in total in .main-section
+			<header><h1>Topic Of Section</h1></header>	
+		</section>
+		<!-- 10 * <p></p> in total in .main-section
 			5 * <code></code> in total in .main-section
 			5 * <li></li> in total in .main section -->
-		</section>
 	</main>
 	<footer>
 		

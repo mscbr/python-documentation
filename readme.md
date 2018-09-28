@@ -10,3 +10,8 @@ python colors:
 	- gray: #646464
 Resources
 ---------
+1.
+	Python Programming:
+	An Introduction to Computer Science
+	John M. Zelle, Ph.D.
+	Preliminary Second Edition Fall 2009
