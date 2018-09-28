@@ -15,3 +15,7 @@ Resources
 	An Introduction to Computer Science
 	John M. Zelle, Ph.D.
 	Preliminary Second Edition Fall 2009
+2.
+	https://docs.python.org/
+3.
+	https://en.wikipedia.org/wiki/Python_(programming_language)
