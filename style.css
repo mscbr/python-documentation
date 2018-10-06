@@ -157,6 +157,7 @@ footer {
 		font-size: 130%;
 	}
 	.nav-link {
-		font-size: 75%;
+		font-size: 18px;
+		padding-left: 5px;
 	}
 }
