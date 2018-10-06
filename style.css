@@ -147,17 +147,28 @@ footer {
 	.main-section header {
 		font-size: 120%;
 	}
+
 	li {
 		font-size: 75%;
 	}
 	code {
 		font-size: 75%;
 	}
+	
+}
+@media only screen and (max-width: 750px) {
+	#main-doc {
+		margin-left: 37%;
+	}
+	#navbar {
+		width: 36%;
+	}
 	#nav-header {
-		font-size: 130%;
+		font-size: 18px;
+		padding-left: 5px;
 	}
 	.nav-link {
-		font-size: 18px;
+		font-size: 13px;
 		padding-left: 5px;
 	}
 }
